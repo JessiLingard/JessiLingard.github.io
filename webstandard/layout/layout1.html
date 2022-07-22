@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메인페이지</title>
+    <style>
+        *{outline: 1px solid red;}
+        body{margin :0}
+        
+        ul {
+            margin:0;
+            padding: 0;
+            list-style: none;
+        }
+
+        header{
+            display: flex;
+            height:50px;
+            position : sticky;
+            top:0;
+            z-index: 1;
+        }
+        header .logo{
+            flex:1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #eee;
+        }
+        header .logo i{
+        color: #333;
+        font-size: 3em;
+        }
+        header .munu{
+            flex:3;
+            display : flex;
+            flex-direction: column;
+        }
+        header.menu.topmenu{
+        text-align: right;
+        }
+        /* GNB 1단계 메뉴 */
+        header .menu .gnb{
+            height:30px;
+        }
+        header .munu .gnb > ul{
+         display: flex;
+        }
+        header .menu .gnb > ul > li{
+            flex:1;
+            padding: 2px 3px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            position: relative;
+        }
+        header .menu .gnb ul li:hover{
+            color: #999;
+            cursor: pointer;
+        }
+        
+        header .menu .gnb ul li:hover > ul{
+            display: block;
+        }
+
+        /* GNB 2단계 메뉴*/
+        header .munu .gnb > ul > li > ul {
+            display: none;
+            position:absolute;
+            top:30px;
+            left:0;
+            width: 100%;
+        }
+        header .munu .gnb > ul > li > ul > li {
+            padding: 2px 3px;
+        }
+        header .munu .gnb > ul > li > ul > li:hover{
+            background-color: #666;
+            color:#fff;
+        }
+        figure{
+           margin:0;
+           height:150px;
+           position:relative;
+        }
+        figure img{
+            height:150px;
+            width:100%;
+        }
+        figure figcaption{
+            position:absolute;
+            top : 30px;
+            left : 50px;
+            color:#fff;
+        }
+        main section .content {
+            display : flex;
+            flex-direction: row;
+            flex-wrap : wrap;
+            padding:50px;
+        }
+        main section article{
+            flex:1;
+        }
+        footer{
+            display : flex;
+            height : 50px;
+            justify-content: center;
+            allgn-items: center;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+    <script src="<i class="fa-solid fa-arrow-right-to-bracket"></i>"
+</head>
+<body>
+ <header>
+    <div class="logo"></div>
+    <div class="menu">
+        <div class = "topmenu">
+        <span>로그인</span>
+        <span>회원가입</span>
+        </div>
+        <div class="gnb">
+            <ul>
+                <li>munu1
+                <li>menu</li>
+                <li>menu</li>             
+            </ul>
+        </li>
+        <li>menu2
+            <ul>
+                <li>menu21</li>
+                <li>menu22</li>
+            </ul>
+        </li>
+        <li>menu3
+            <ul>
+            <li>menu31</li>
+            <li>menu32</li>
+            <li>menu33</li>
+            <li>menu34</li>
+            </ul>
+        </li>
+        <li>menu4</li>
+        <li>menu5</li>
+        </div>
+        </div>
+    </div class="gnb">gnb</div>
+    </div>
+ </header>
+ <figure>
+     <figcaption>
+        <h3> Lorem,ipsum dolor.</h3>
+        <p>Lorem ipsum dolor sit amet fdsafasdsad</p>
+     <figcaption>
+    <img src="../img/img_main.jpg" alt="커피">
+ </figure>
+ <main>
+    main
+    <section>
+        <div class="content">
+        <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum optio rerum assumenda eius praesentium, ea commodi asperiores quae numquam ratione exercitationem consequuntur eveniet enim quasi ex adipisci odio id distinctio!</article>  
+        <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aliquam esse aspernatur earum eum omnis ipsum exercitationem eligendi culpa eos doloremque modi iure deserunt qui et asperiores, vero, quod consequatur.</article>
+        <article>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error officia nemo totam exercitationem explicabo nihil molestiae alias eveniet atque suscipit, blanditiis ab delectus! Aperiam vel impedit laboriosam quae rem. Asperiores!</article>
+        <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quasi facilis accusantium expedita! Non fugiat corrupti velit facilis nostrum, eaque recusandae adipisci saepe deleniti. Nulla veritatis accusamus magni sint libero.</article>
+        <article>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione debitis amet enim. Excepturi accusantium modi vitae facilis itaque? Tempore, omnis. Explicabo, distinctio odit enim libero omnis molestiae assumenda ducimus accusantium!</article>
+    </div>
+    </section>
+ </main>
+ <footer>
+    <p>copyright@울산KH정보교육원. ALL Rights Reserved.</p>
+ </footer>   
+</body>
+</html>

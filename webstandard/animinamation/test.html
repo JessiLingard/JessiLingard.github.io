@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            position: relative;
+            margin: 0;
+        }
+        #box{
+            position:absolute;
+            top:0;
+            left:100px;
+
+            width:200px;
+            height:200px;
+            background: linear-gradient();
+            text-align: center;
+            border-radius: 50%;
+            box-shadow: 13px 10px 15px 5px #ccc;
+
+            animation-name: rotation;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease;
+
+            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b3dced+0,29b8e5+50,bce0ee+100;Blue+Pipe */
+    background: #b3dced; /* Old browsers */
+    background: -moz-linear-gradient(top, #b3dced 0%, #29b8e5 50%, #bce0ee 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #b3dced 0%,#29b8e5 50%,#bce0ee 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #b3dced 0%,#29b8e5 50%,#bce0ee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#bce0ee',GradientType=0 ); /* IE6-9 */
+        }
+        #box h1{
+            line-height: 200px;
+        }
+
+        @keyframes rotation {
+            0%{
+                top:0;
+                left:100px;
+                transform: rotate(0deg);
+                
+            }
+
+            50%{
+                transform: rotate(90deg);
+            }
+
+            100%{
+                top:0;
+                left:400px;
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+    <h1>Rotation</h1>
+    </div>
+</body>
+</html>
